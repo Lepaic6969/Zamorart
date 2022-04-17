@@ -8,7 +8,7 @@ body{
 /* Estilos cabecera */
 header{
     height: 90px;
-    background-color: rgba(51,51,51,0.8);
+    background-color: rgba(51,51,51,0.7);
     line-height: 60px;
     width: 100%;
     position:fixed;
@@ -25,18 +25,33 @@ header{
     margin: 0 30px;
     font-size: 18px;
     /* font-weight: bold; */
+    transition: all 300ms;
 }
+.menu a:hover{
+    /* text-shadow: 5px 5px 5px rgb(0,136,183); */
+    font-weight: bold;
+    color:rgb(253,22,118);
+}
+
 
 /* Estilos contenido principal */
 main{
-    height: 700px;
+    height: 1200px;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
 }
 
 /* Estilos pie de página */
 footer{
     height: 85px;
-    background-color: rgb(51,51,51);
+    background-color: rgb(31,38,44);
     color:white;
     text-align: center;
     line-height: 85px;
+    
 }
+
+
