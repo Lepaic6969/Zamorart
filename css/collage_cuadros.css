@@ -1,0 +1,53 @@
+.collage{
+    width: 95%;
+    height: 1200px;
+    margin: 30px auto;
+    
+
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap:10px;
+}
+.collage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.primera{
+ 
+    grid-column: 1/4;
+    grid-row: 1/6;
+}
+.cuarta{
+    grid-column: 1/4;
+    grid-row: 6/11;
+}
+.segunda{
+    grid-column: 4/6;
+    grid-row: 1/4;
+}
+.tercera{
+    grid-column: 6/8;
+    grid-row: 1/4;
+}
+.quinta{
+    margin-top: 5px;
+    height: 85% !important;
+    grid-column: 4/6;
+    grid-row: 4/8;
+}
+.sexta{
+    margin-top: 5px;
+    height: 85% !important;
+    grid-column: 6/8;
+    grid-row: 4/8;
+}
+.septima{
+    margin-top: -50px;
+    grid-column: 4/8;
+    grid-row: 8/11;
+}
+
+

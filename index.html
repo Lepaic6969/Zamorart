@@ -7,6 +7,8 @@
     <link rel="icon" type="image/jpg" href="./img/logo.jpg"/>
     <title>Zamorart</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/collage_cuadros.css">
   
 </head>
 <body>
@@ -23,7 +25,69 @@
         </nav>
     </header>
     <main>
-       
+        <!-- Slider -->
+        <section class="slider">
+            <div class="slider_container container">
+                 <img src="./img/img-slider/leftarrow.svg" class="slider_arrow" id="before">
+ 
+                 <section class="slider_body slider_body--show" data-id="1">
+                     <div class="slider_text">
+                         <h2 class="subtitle">¡Hola! mi nombre es Jordan Alexander</h2>
+                         <p class="slider_review">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quos doloremque, 
+                             doloribus dolorum magni voluptatem?
+                         </p>
+                     </div>
+                     <figure class="slider_picture">
+                         <img src="./img/img-slider/rostro5.jpg" class="slider_img">
+                     </figure>
+                 </section>
+ 
+                 <section class="slider_body" data-id="2">
+                     <div class="slider_text">
+                         <h2 class="subtitle">¡Hola! mi nombre es Alejandra Pérez</h2>
+                         <p class="slider_review">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Reprehenderit minus dolor quae, maiores obcaecati officia quis fugit recusandae pariatur.
+                         </p>
+                     </div>
+                     <figure class="slider_picture">
+                         <img src="./img/img-slider/rostro2.jpg" class="slider_img">
+                     </figure>
+                 </section>
+ 
+                 <section class="slider_body" data-id="3">
+                     <div class="slider_text">
+                         <h2 class="subtitle">¡Hola! mi nombre es Pablo Gonzales</h2>
+                         <p class="slider_review">
+                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                             Expedita iste aliquam voluptatem cum hic labore, repellendus necessitatibus illum!
+                         </p>
+                     </div>
+                     <figure class="slider_picture">
+                         <img src="./img/img-slider/rostro3.jpg" class="slider_img">
+                     </figure>
+                 </section>
+                 <section class="slider_body" data-id="4">
+                     <div class="slider_text">
+                         <h2 class="subtitle">¡Hola! mi nombre es Juan Camilo</h2>
+                         <p class="slider_review">
+                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                             Expedita iste aliquam voluptatem cum hic labore, repellendus necessitatibus illum!
+                         </p>
+                     </div>
+                     <figure class="slider_picture">
+                         <img src="./img/img-slider/rostro1.jpg" class="slider_img">
+                     </figure>
+                 </section>
+                 <img src="./img/img-slider/rightrow.svg" class="slider_arrow" id="after">
+            </div>
+        </section>
+             
+        <!-- Fin del Slider -->
+
+
+       <!-- Collage -->
         <section class="collage">
             <img src="./img/collage/1.1.jpeg" alt="primera" class="primera">
             <img src="./img/collage/1.2.jpg" alt="segunda"  class="segunda">
@@ -43,9 +107,11 @@
 
         </section>
 
+        <!-- Fin de Collage -->
+
     </main>
     <footer>Todos los derechos reservados &copy; Zamorart 2022</footer>
 
-<script src="./scripts/script.js"></script>
+<script src="./scripts/script.js" type="module"></script>
 </body>
 </html>

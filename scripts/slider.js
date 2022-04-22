@@ -1,4 +1,4 @@
-(function(){
+export function slider(){
     const sliders=[...document.querySelectorAll(".slider_body")]; //Convierto la lista de Nodos en un Array.
     const arrowNext=document.getElementById("after");
     const arrowBefore=document.getElementById("before");
@@ -64,4 +64,4 @@
 
 
   
-})();
+}
