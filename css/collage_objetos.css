@@ -1,0 +1,74 @@
+.objeto{
+    width:100%;
+
+    animation-name:opacidad;
+    animation-duration:3s;
+}
+
+.piedra{
+    margin-top: -420px;
+}
+@media (max-width:1300px){
+    .piedra{
+        margin-top:-380px;
+    }
+}
+@media (max-width:1050px){
+    .piedra{
+        margin-top:-350px;
+    }
+}
+@media (max-width:992px){
+    .piedra{
+        margin-top:-340px;
+    }
+}
+@media (max-width:850px){
+    .piedra{
+        margin-top:-270px;
+    }
+}
+@media (max-width:780px){
+    .piedra{
+        margin-top:-250px;
+    }
+}
+@media (max-width:767px){
+    .piedra{
+        margin-top:0;
+    }
+}
+
+
+   
+
+
+@keyframes opacidad{
+    0%{
+        opacity:0 ;
+        border-radius: 100%;
+        
+    }
+    100%{
+        opacity:1;
+        border-radius: 0;
+    }
+}
+
+/* **************************Estilos personalizados para los modales *******/
+
+.w-50-personalizado{
+    width: 50%;
+}
+@media(max-width:992px){
+    .w-50-personalizado{
+        width: 100%;
+    }
+}
+
+.cuadro{
+    cursor:pointer;
+}
+.cuadro:hover{
+    opacity: .7;
+}

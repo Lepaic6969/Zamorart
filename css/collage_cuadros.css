@@ -1,5 +1,5 @@
 .collage{
-    width: 95%;
+    width: 80%;
     height: 1200px;
     margin: 30px auto;
     
@@ -19,35 +19,227 @@
  
     grid-column: 1/4;
     grid-row: 1/6;
+
+    animation-name:mover;
+    animation-duration:4s;
+    
 }
 .cuarta{
     grid-column: 1/4;
     grid-row: 6/11;
+
+    animation-name:mover;
+    animation-duration:4s;
 }
 .segunda{
     grid-column: 4/6;
     grid-row: 1/4;
+
+    animation-name:mover;
+    animation-duration:3s;
 }
 .tercera{
     grid-column: 6/8;
     grid-row: 1/4;
+
+    animation-name:mover;
+    animation-duration:3s;
 }
 .quinta{
     margin-top: 5px;
     height: 85% !important;
     grid-column: 4/6;
     grid-row: 4/8;
+
+    animation-name:mover;
+    animation-duration:3s;
 }
 .sexta{
     margin-top: 5px;
     height: 85% !important;
     grid-column: 6/8;
     grid-row: 4/8;
+
+    animation-name:mover;
+    animation-duration:2s;
 }
 .septima{
     margin-top: -50px;
     grid-column: 4/8;
     grid-row: 8/11;
+
+    animation-name:mover;
+    animation-duration:2s;
 }
 
+@keyframes mover{
+    0%{
+        transform: translateX(-500%) rotate(180deg) scale(0.5);
+        
+    }
+    100%{
+        transform: translateX(0) rotate(0) scale(1);
+    }
+}
 
+@media(max-width:992px){
+    .collage{
+        width: 90%;
+        height: 2400px;  /***/
+        margin: 30px auto;
+        
+    
+        display:grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(20,1fr);
+        gap:10px;
+    }
+    .collage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .primera{
+     
+        grid-column: 2/6;
+        grid-row: 1/6;
+        
+        animation-name:mover;
+        animation-duration:5s;
+        
+        
+    }
+    .cuarta{
+        grid-column: 2/6;
+        grid-row: 16/21;
+        margin-top: -60px;
+        animation-name:mover;
+        animation-duration:6s;
+    }
+    .segunda{
+        grid-column: 1/4;
+        grid-row: 6/9;
+    
+        animation-name:mover;
+        animation-duration:4s;
+    }
+    .tercera{
+        grid-column: 4/7;
+        grid-row: 6/9;
+    
+        animation-name:mover;
+        animation-duration:4s;
+    }
+    .quinta{
+        margin-top: 5px;
+        height: 85% !important;
+        grid-column: 1/4;
+        grid-row: 9/13;
+    
+        animation-name:mover;
+        animation-duration:4s;
+    }
+    .sexta{
+        margin-top: 5px;
+        height: 85% !important;
+        grid-column: 4/7;
+        grid-row: 9/13;
+    
+        animation-name:mover;
+        animation-duration:3s;
+    }
+    .septima{
+        margin-top: -65px;
+        grid-column: 1/7;
+        grid-row: 13/16;
+    
+        animation-name:mover;
+        animation-duration:3s;
+    }
+}
+
+@media(max-width:768px){
+    .collage{
+        width: 80%;
+        height: auto;
+        margin: 30px auto;
+        display:block;
+    }
+    .collage img{
+       display:block;
+       margin:30px auto;
+       width: 100%;
+      
+       
+        
+    }
+    .quinta{
+        margin-top: 5px;
+        height: 100vh !important;
+     
+    }
+    .sexta{
+        margin-top: 5px;
+        height: 100vh !important;
+      
+    }
+
+    .primera{
+        height: 70vh;
+    }
+    .cuarta{
+        height: 70vh;
+    }
+    .segunda{
+        height: 90vh;
+    }
+    .tercera{
+        height: 90vh;
+    }
+    
+    .septima{
+        display:none !important;
+    }
+    
+}
+
+@media(max-width:600px){
+    .quinta{
+        height: 80vh !important;
+     
+    }
+    .sexta{
+        height: 80vh !important;
+      
+    }
+}
+
+@media(max-width:400px){
+    .quinta{
+        height: 60vh !important;
+     
+    }
+    .sexta{
+        height: 60vh !important;
+      
+    }
+}
+
+/* **************************Estilos personalizados para los modales *******/
+
+.w-50-personalizado{
+    width: 50%;
+}
+@media(max-width:992px){
+    .w-50-personalizado{
+        width: 100%;
+    }
+}
+
+.cuadro{
+    cursor:pointer;
+}
+.cuadro:hover{
+    opacity: .7;
+}

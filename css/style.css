@@ -3,66 +3,213 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 
 body{
-    background-image: url("../img/fondo.jpg");
+    /* background-image: url("../img/fondo2\ 1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: 200px 0; */
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed; */
+   
+  
+}
+header,h5,h6,h3,footer{
     font-family: 'Kaushan Script', cursive;
 }
 
 
-/* Estilos cabecera */
-header{
-    height: 80px;
-    line-height: 80px;
-    width: 100%;
-    background-color: rgb(31,38,44);
-   
-  
-  
-    
+/* ***************Colores para el Header */
+
+.text-za{
+ color:rgb(190,1,79);
 }
-.menu ul{
-    margin-right: 50px;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* border:1px solid white; */
+.text-mor{
+    color:rgb(2,27,105)
 }
-.menu a{
-    text-decoration: none;
-    color:white;
-    padding: 10px;
-    margin: 0 20px;
-    font-size: 23px;
-    transition: all 300ms;
+.text-art{
+ color:rgb(22,16,20)
 }
-.menu a:hover{
-    color:rgb(133,184,220);
-    text-shadow: 0px 0px 10px black;
+
+/* Animación de los saltos */
+.animacion-logo{
+    animation-name: saltos;
+    animation-duration: 4s;
 }
+@keyframes saltos{
+    0%{
+        transform:translateY(0) translateX(-300%) scale(0.85);
+    }
+    10%{
+        transform:translateY(-20%) translateX(-200%) scale(0.85);
+    }
+    20%{
+        transform:translateY(0) translateX(-100%) scale(0.85);
+    }
+    30%{
+        transform:translateY(-20%) translateX(0) scale(0.85);
+    }
+    40%{
+        transform:translateY(0) translateX(100%) scale(0.85);
+    }
+    50%{
+        transform:translateY(-20%) translateX(200%) scale(0.85);
+    }
+    60%{
+        transform:translateY(0) translateX(300%) scale(0.85);
+    }
+    70%{
+        transform:translateY(-20%) translateX(200%) scale(0.85);
+    }
+    80%{
+        transform:translateY(0) translateX(100%) scale(0.85);
+    }
+    90%{
+        transform:translateY(-20%) translateX(0) scale(0.85);
+    }
+    100%{
+        transform:translateY(0) translateX(0) scale(1);
+    }
+}
+
+
+
+
+
 
 
 /* Estilos contenido principal */
+.w-15{
+    width:150px;
+ 
+}
+.me-10{
+    margin-right: 15vw;
+}
+
+.h-img{
+    height:80vh;  
+    width: 50%; 
+    object-fit: cover;
+}
+@media (max-width:992px){
+    img .h-img{
+        height:80vh;  
+        width: 100%;
+    }
+    div .h-img{
+        height:auto;  
+        width: 100%;
+    }
+    
+}
+
+.container-slider{
+    width: 70%;
+    margin:auto;
+}
+@media(max-width:768px){
+    .container-slider{
+        width: 90%;
+      
+    }
+}
+
+.ocultar{
+    display: none;
+}
+
+@media(min-width:992px){
+    .ocultar{
+        display: block;
+    }
+}
+.fondo-texto-slider{
+    background-image: url("../img/fondo2\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    background-color: black;
+    opacity: 1;
+    
+}
 main{
-    height: 2500px;
+    height: auto;
 }
 
 
 /* Estilos pie de página */
 footer{
     
-    height: 85px;
+    height: auto;
     background-color: rgb(31,38,44);
     color:white;
     text-align: center;
-    line-height: 85px;
+    line-height: 40px;
+    padding-bottom: 15px;
+    padding-top: 30px;
     
+}
+.derechos-reservados{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 20px;
 }
 
 
+/* Estilos de los botones de contacto */
+.whatsapp,.insta,.face{
+    position:fixed;
+    z-index: 999;
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    outline: 0;
+    border:0;
+    transition: all 0.3s ease-out;
+}
+.whatsapp{
+    bottom: 3vh;
+    right: 3vw;
+}
+.whatsapp img, .insta img, .face img{
+    border-radius: 50%;
+}
+.whatsapp:hover{
+   transform: scale(1.2);
+}
+
+
+
+.insta{
+    bottom: 3vh;
+    left: 3vw;
+}
+.insta:hover{
+   transform: scale(1.2);
+}
+
+.face{
+   
+    bottom: 3vh;
+    left: 4vw;
+}
+.face:hover{
+   transform: scale(1.2);
+}
+
+
+
+@media(max-width:768px){
+    .whatsapp,.insta{
+        bottom: 1vh;
+        right: 1vw;
+     
+    }
+}
